@@ -1,5 +1,4 @@
 #! /usr/bin/env node
-
 import inquirer from "inquirer";
 
 const currency: any  = {
@@ -10,6 +9,7 @@ const currency: any  = {
     GBP: 0.76,
     AUD: 1.54,
     AWG: 1.80
+
 };
 
 let userAnswer= await inquirer.prompt(
@@ -29,7 +29,7 @@ let userAnswer= await inquirer.prompt(
              type: "list",
             choices: ["USD" , "PKR" , "INR " , "GBP" , "AUD" , "AWG"]
         },
-
+        
         {
             name: "amount",
             message: "Enter your amount",
